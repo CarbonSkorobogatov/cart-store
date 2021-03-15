@@ -5,7 +5,7 @@ import CartSummary from "./CartSummary";
 
 function CartList({ cartProducts }) {
   return (
-    <List divided verticalAlign='middle' style={{ width: '50%' }} size='huge'>
+    <List divided verticalAlign='middle' style={{ width: '50%', margin: 0 + ' auto' }} size='huge'>
       {cartProducts.map(product => (
         <CartListItem key={product.id} product={product} />
       ))}
